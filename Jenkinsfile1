@@ -1,1 +1,8 @@
-
+node {
+stage('SCM Checkout'){
+git 'https://github.com/AkashRaut/practice'
+ }
+  stage('Compile-Package'){
+  sh 'mvn package'
+  }
+}
